@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info</title>
+    <style>
+        input{
+            height: 5vh;
+            width: 20vw;
+            border-radius: 10px;
+        }
+        label{
+            font-size: larger;
+        }
+        table{
+            border-spacing: 5vh;
+        }
+        #tm td{
+            height:5vh;
+            width: 20vw;
+            text-align: center;
+            font-weight:500;
+        }
+        #tm th{
+            height:5vh;
+            width: 20vw;
+            text-align: center;
+        }
+        .logoim{
+            height: 7vh;
+            width: 4vw;
+            margin-top: 1%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 style="background-color: rgb(60, 254, 238);  font-size: xx-large;height: 10vh;"><img class="logoim" src="photos/logo1.png" alt=""> Sunshine Jr College</h1>
+    </nav>
+    <form action="">
+        <table>
+            <h2>Student Information</h2>
+            <tr>
+                <td>
+                    <label>Student Registration Number <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label>Student Name <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label>Student Mobile Number <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Course <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label>Studying Year <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label>Gender <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Date Of Birth <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label>Student Email <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
+        <table>
+            <h2>Personal Details</h2>
+            <tr>
+                <td>
+                    <label>Father Name <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label>Father Occupation <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label>Mother Name <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Address <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label>Parent Mobile Number <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label>Parent Email <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
+        <table id="tm" border="2px" style="border-collapse: collapse;">
+            <h2>Student Marks Details</h2>
+            <tr>
+                <th>Subject Name</th>
+                <th>1st Term Marks</th>
+                <th>2nd Term Marks</th>
+            </tr>
+            <tr>
+                <td>Subject One</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Subject Two</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Subject Three</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Subject Four</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Subject Five</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sum</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Average</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
+
+<!--
+    <%@ page import="java.sql.*" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Student Info</title>
+ <style>
+  input{ height: 5vh; width: 20vw; border-radius: 10px; }
+  label{ font-size: larger; }
+  table{ border-spacing: 5vh; }
+  #tm td{ height:5vh; width: 20vw; text-align: center; font-weight:500; }
+  #tm th{ height:5vh; width: 20vw; text-align: center; }
+  .logoim{ height: 7vh; width: 4vw; margin-top: 1%; }
+ </style>
+</head>
+<body>
+ <nav>
+  <h1 style="background-color: rgb(60, 254, 238); font-size: xx-large;height: 10vh;"><img class="logoim" src="photos/logo1.png" alt=""> Sunshine Jr College</h1>
+ </nav>
+ <form action="">
+ <table>
+ <h2>Student Information</h2>
+ <tr>
+ <td>
+ <label>Student Registration Number <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="registrationNumber" value="<%= student.getRegistrationNumber() %>">
+ </td>
+ <td>
+ <label>Student Name <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="studentName" value="<%= student.getStudentName() %>">
+ </td>
+ <td>
+ <label>Student Mobile Number <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="mobileNumber" value="<%= student.getMobileNumber() %>">
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <label>Course <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="course" value="<%= student.getCourse() %>">
+ </td>
+ <td>
+ <label>Studying Year <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="studyingYear" value="<%= student.getStudyingYear() %>">
+ </td>
+ <td>
+ <label>Gender <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="gender" value="<%= student.getGender() %>">
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <label>Date Of Birth <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="dob" value="<%= student.getDob() %>">
+ </td>
+ <td>
+ <label>Student Email <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="email" value="<%= student.getEmail() %>">
+ </td>
+ </tr>
+ </table>
+ <table>
+ <h2>Personal Details</h2>
+ <tr>
+ <td>
+ <label>Father Name <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="fatherName" value="<%= student.getFatherName() %>">
+ </td>
+ <td>
+ <label>Father Occupation <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="fatherOccupation" value="<%= student.getFatherOccupation() %>">
+ </td>
+ <td>
+ <label>Mother Name <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="motherName" value="<%= student.getMotherName() %>">
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <label>Address <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="address" value="<%= student.getAddress() %>">
+ </td>
+ <td>
+ <label>Parent Mobile Number <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="parentMobileNumber" value="<%= student.getParentMobileNumber() %>">
+ </td>
+ <td>
+ <label>Parent Email <span style="color: red;font-weight: bold;font-size: 12pt;">*</span></label> <br>
+ <input type="text" name="parentEmail" value="<%= student.getParentEmail() %>">
+ </td>
+ </tr>
+ </table>
+ <table id="tm" border="2px" style="border-collapse: collapse;">
+ <h2>Student Marks Details</h2>
+ <tr>
+ <th>Subject Name</th>
+ <th>1st Term Marks</th>
+ <th>2nd Term Marks</th>
+ </tr>
+ <tr>
+ <td>Subject One</td>
+ <td><input type="text" name="subject1Term1Marks" value="<%= student.getSubject1Term1Marks() %>"></td>
+ <td><input type="text" name="subject1Term2Marks" value="<%= student.getSubject1Term2Marks() %>"></td>
+ </tr>
+ <tr>
+ <td>Subject Two</td>
+ <td><input type="text" name="subject2Term1Marks" value="<%= student.getSubject2Term1Marks() %>"></td>
+ <td><input type="text" name="subject2Term2Marks" value="<%= student.getSubject2Term2Marks() %>"></td>
+ </tr>
+ <tr>
+ <td>Subject Three</td>
+ <td><input type="text" name="subject3Term1Marks" value="<%= student.getSubject3Term1Marks() %>"></td>
+ <td><input type="text" name="subject3Term2Marks" value="<%= student.getSubject3Term2Marks() %>"></td>
+ </tr>
+ <tr>
+ <td>Subject Four</td>
+ <td><input type="text" name="subject4Term1Marks" value="<%= student.getSubject4Term1Marks() %>"></td>
+ <td><input type="text" name="subject4Term2Marks" value="<%= student.getSubject4Term2Marks() %>"></td>
+ </tr>
+ <tr>
+ <td>Subject Five</td>
+ <td><input type="text" name="subject5Term1Marks" value="<%= student.getSubject5Term1Marks() %>"></td>
+ <td><input type="text" name="subject5Term2Marks" value="<%= student.getSubject5Term2Marks() %>"></td>
+ </tr>
+ <tr>
+ <td>Sum</td>
+ <td><input type="text" name="sum" value="<%= student.getSum() %>"></td>
+ <td><input type="text" name="average" value="<%= student.getAverage() %>"></td>
+ </tr>
+ </table>
+ </form>
+</body>
+</html>
+-->
+
+<!--
+    <%@page import="java.sql.*"%>
+
+<%
+   String connectionURL = "jdbc:oracle:thin:@myhostname:1521:xe";
+   Connection con = null;
+   Statement stmt = null;
+   ResultSet rs = null;
+
+   try {
+      Class.forName("oracle.jdbc.OracleDriver");
+      con = DriverManager.getConnection(connectionURL, "myusername", "mypassword");
+      stmt = con.createStatement();
+      rs = stmt.executeQuery("SELECT * FROM student");
+
+      while (rs.next()) {
+         String registrationNumber = rs.getString("registration_number");
+         String studentName = rs.getString("student_name");
+         String studentMobileNumber = rs.getString("student_mobile_number");
+         String course = rs.getString("course");
+         String studyingYear = rs.getString("studying_year");
+         String gender = rs.getString("gender");
+         String dateOfBirth = rs.getString("date_of_birth");
+         String studentEmail = rs.getString("student_email");
+         String fatherName = rs.getString("father_name");
+         String fatherOccupation = rs.getString("father_occupation");
+         String motherName = rs.getString("mother_name");
+         String address = rs.getString("address");
+         String parentMobileNumber = rs.getString("parent_mobile_number");
+         String parentEmail = rs.getString("parent_email");
+         String subject1Term1Marks = rs.getString("subject1_term1_marks");
+         String subject1Term2Marks = rs.getString("subject1_term2_marks");
+         String subject2Term1Marks = rs.getString("subject2_term1_marks");
+         String subject2Term2Marks = rs.getString("subject2_term2_marks");
+         String subject3Term1Marks = rs.getString("subject3_term1_marks");
+         String subject3Term2Marks = rs.getString("subject3_term2_marks");
+         String subject4Term1Marks = rs.getString("subject4_term1_marks");
+         String subject4Term2Marks = rs.getString("subject4_term2_marks");
+         String subject5Term1Marks = rs.getString("subject5_term1_marks");
+         String subject5Term2Marks = rs.getString("subject5_term2_marks");
+
+         %>
+
+         <tr>
+            <td><input type="text" name="registrationNumber" value="<%= registrationNumber %>"></td>
+            <td><input type="text" name="studentName" value="<%= studentName %>"></td>
+            <td><input type="text" name="studentMobileNumber" value="<%= studentMobileNumber %>"></td>
+         </tr>
+         <tr>
+            <td><input type="text" name="course" value="<%= course %>"></td>
+            <td><input type="text" name="studyingYear" value="<%= studyingYear %>"></td>
+            <td><input type="text" name="gender" value="<%= gender %>"></td>
+         </tr>
+         <tr>
+            <td><input type="text" name="dateOfBirth" value="<%= dateOfBirth %>"></td>
+            <td><input type="text" name="studentEmail" value="<%= studentEmail %>"></td>
+         </tr>
+         <tr>
+            <td><input type="text" name="fatherName" value="<%= fatherName %>"></td>
+            <td><input type="text" name="fatherOccupation" value="<%= fatherOccupation %>"></td>
+            <td><input type="text" name="motherName" value="<%= motherName %>"></td>
+         </tr>
+         <tr>
+            <td><input type="text" name="address" value="<%= address %>"></td>
+            <td><input type="text" name="parentMobileNumber" value="<%= parentMobileNumber %>"></td>
+            <td><input type="text" name="parentEmail" value="<%= parentEmail %>"></td>
+         </tr>
+         <tr>
+            <td>Subject One</td>
+            <td><input type="text" name="subject1Term1Marks" value="<%= subject1Term1Marks %>"></td>
+            <td><input type="text" name="subject1Term2Marks" value="<%= subject1Term2Marks %>"></td>
+         </tr>
+         <tr>
+            <td>Subject Two</td>
+            <td><input type="text" name="subject2Term1Marks" value="<%= subject2Term1Marks %>"></td>
+            <td><input type="text" name="subject2Term2Marks" value="<%= subject2Term2Marks %>"></td>
+         </tr>
+         <tr>
+            <td>Subject Three</td>
+            <td><input type="text" name="subject3Term1Marks" value="<%= subject3Term1Marks %>"></td>
+            <td><input type="text" name="subject3Term2Marks" value="<%= subject3Term2Marks %>"></td>
+         </tr>
+         <tr>
+            <td>Subject Four</td>
+            <td><input type="text" name="subject4Term1Marks" value="<%= subject4Term1Marks %>"></td>
+            <td><input type="text" name="subject4Term2Marks" value="<%= subject4Term2Marks %>"></td>
+         </tr>
+         <tr>
+            <td>Subject Five</td>
+            <td><input type="text" name="subject5Term1Marks" value="<%= subject5Term1Marks %>"></td>
+            <td><input type="text" name="subject5Term2Marks" value="<%= subject5Term2Marks %>"></td>
+         </tr>
+
+         <%
+      }
+   } catch (Exception ex) {
+      out.println("Error: " + ex.getMessage());
+   } finally {
+      try {
+         if (rs != null)
+            rs.close();
+         if (stmt != null)
+            stmt.close();
+         if (con != null)
+            con.close();
+      } catch (Exception e) {
+         out.println("Error: " + e.getMessage());
+      }
+   }
+%>
+-->

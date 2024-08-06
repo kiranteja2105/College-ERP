@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://kit.fontawesome.com/7764471369.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="std_login_style.css">
+      <title>Student Login</title>
+      <link rel="icon" type="image/x-icon" href="photos/logo.png">
+   </head>
+   <body>
+      <div class="login">
+         <img src="photos/login_img.jpg" alt="image" class="login__bg">
+
+         <form action="s2.jsp" class="login__form" name="Std_login" method="post">
+            <h1 class="login__title">Student Login</h1>
+
+            <div class="login__inputs">
+               <div class="login__box">
+                  <input type="text" placeholder="Register Number" name="reg" required class="login__input">
+                  <i class="fas fa-user"></i>
+               </div>
+
+               <div class="login__box">
+                  <input type="password" placeholder="Password" name="spass" required class="login__input">
+                  <i class="fas fa-lock"></i>
+               </div>
+            </div>
+            <button type="submit" class="login__button">Login</button>
+         </form>
+      </div>
+   </body>
+</html>

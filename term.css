@@ -1,0 +1,21 @@
+table{
+    border-spacing: 30px;
+}
+input{
+    width: 20vw;
+    height:4vh;
+    border-radius: 10px;
+}
+table tr td{
+    font-size: larger;
+    font-weight: 100;
+    text-align: center;
+}
+body{
+    background-image: url('photos/marksback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table tr th{
+    font-size: larger;
+}

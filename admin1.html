@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="icon" type="image/x-icon" href="photos/logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .top-division, .bottom-division {
+            flex-basis: 100%;
+            padding: 0 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .card {
+            width: 200px; /* Card width relative to viewport width */
+            height: 200px; /* Card height relative to viewport height */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 20px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: box-shadow 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .card h2 {
+            margin: 0;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px;
+            color: #333;
+        }
+        .card p {
+            margin: 0;
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+        }
+        .card-button {
+            margin-top: 10px;
+            padding: 6px 12px; 
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 12px;
+        }
+        .card-button:hover {
+            background-color: #0056b3;
+        }
+        .navbar {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1><img class="logoim" src="photos/logo.png" alt="" style="height: 35px;width: 35px;margin-right: 10px;margin-left: 15px;">Sunshine Jr College</h1>
+</div>
+
+<div class="container">
+    <!-- Top Division -->
+    <div class="top-division">
+        <div class="card">
+            <h2>Add Student</h2>
+            <p>Add a new student to the database.</p>
+            <a href="addstd.html"><button class="card-button">Add Student</button></a>
+        </div>
+
+        <div class="card">
+            <h2>Add Faculty</h2>
+            <p>Add a new faculty member to the database.</p>
+            <a href="addfaculty.html"><button class="card-button">Add Faculty</button></a>
+        </div>
+
+        <div class="card">
+            <h2>Update Student Details</h2>
+            <p>Update information for existing students.</p>
+            <a href="update.html"><button class="card-button">Update Student Details</button></a>
+        </div>
+    </div>
+
+    <!-- Middle Division -->
+    <div class="middle-division">
+        <div class="card">
+            <h2 >Sunshine Jr College Admin</h2>
+            <!--<p>Manage admin settings.</p>
+            <button class="card-button">Go to Sunshine Admin</button>-->
+        </div>
+    </div>
+
+    <!-- Bottom Division -->
+    <div class="bottom-division">
+        <div class="card">
+            <h2>Delete Student</h2>
+            <p>Delete a student from the database.</p>
+            <a href="delete.html" ><button class="card-button">Delete Student</button></a>
+        </div>
+
+        <div class="card">
+            <h2>Delete Faculty</h2>
+            <p>Delete a faculty member from the database.</p>
+            <a href="delete_f.html" ><button class="card-button">Delete Faculty</button></a>
+        </div>
+        <div class="card">
+            <h2>Students List</h2>
+            <p>Delete a faculty member from the database.</p>
+            <a href="display_student.jsp" ><button class="card-button">Students List</button></a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
